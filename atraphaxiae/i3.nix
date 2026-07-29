@@ -12,12 +12,21 @@
 				size = 10.0;
 			};
 			keybindings = {
+				"XF86AudioRaiseVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%+ --limit 1";
+				"XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_SINK@ 5%- --limit 0";
+				"XF86AudioMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_SINK@ toggle";
+				"XF86AudioMicMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_SOURCE@ toggle";
+				"XF86MonBrightnessUp" = "exec brightnessctl set 2%+";
+				"XF86MonBrightnessDown" = "exec brightnessctl set 2%-";
+				"Print" = "exec flameshot gui";
+
 				"${modifier}+Return" = "exec ${terminal}";
 				"${modifier}+Shift+q" = "kill";
 				"${modifier}+Shift+d" = "exec rofi -show drun";
 				"${modifier}+Shift+c" = "reload";
 				"${modifier}+Shift+r" = "restart";
 				"${modifier}+Shift+e" = "exec i3-msg exit";
+				"${modifier}+p" = "exec \"gopass ls --flat | rofi -dmenu | xargs --no-run-if-empty gopass show -c\"";
 
 				"${modifier}+j" = "focus left";
 				"${modifier}+k" = "focus down";
@@ -31,7 +40,11 @@
 				"${modifier}+h" = "split h";
 				"${modifier}+v" = "split v";
 				"${modifier}+f" = "fullscreen toggle";
+				"${modifier}+w" = "layout tabbed";
 				"${modifier}+Shift+space" = "floating toggle";
+				"${modifier}+a" = "focus parent";
+				"${modifier}+d" = "focus child";
+				"${modifier}+space" = "focus mode_toggle";
 
 				"${modifier}+1" = "workspace number 1";
 				"${modifier}+2" = "workspace number 2";
