@@ -46,15 +46,16 @@
 			gopass-hibp
 
 			# other
-			rsync
-			xev
 			btop
-			smartmontools
 			flameshot
+			ltspice
 			peazip
 			proton-vpn
 			proton-authenticator
+			rsync
+			smartmontools
 			ungoogled-chromium
+			xev
 		];
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
