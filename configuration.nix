@@ -21,10 +21,17 @@
 
 	i18n.defaultLocale = "en_US.UTF-8";
 
-	users.users.atraphaxiae = {
-		isNormalUser = true;
-		extraGroups = [ "networkmanager" "wheel" ];
+	users = {
+		mutableUsers = false;
+
+		users.atraphaxiae = {
+			isNormalUser = true;
+			description = "Nile Jocson";
+			extraGroups = [ "networkmanager" "wheel" ];
+			hashedPassword = "$y$j9T$ofWpoudVA47LLAOa9BNNT.$BUljqw.db6ubQq79Weym9vyH/kDC6sPMq3OYAxs7EY5";
+		};
 	};
+
 
 	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [
