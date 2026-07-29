@@ -12,6 +12,50 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
+
+      # downloads
+      qbittorrent
+      nixotine-plus
+
+      # audio
+      ffmpeg_7-full
+      flacon
+      sacd
+      kid3-qt
+      rsgain
+      ardour
+      lsp-plugins
+      qpwgraph
+      musescore
+      dr14_tmeter
+
+      # coding
+      gdb
+      lldb
+      typst
+      tinymist
+      rustup
+      zola
+ 
+      # media
+      krita
+      inkscape
+      vlc
+
+      # passwords
+      gopass
+      gopass-hibp
+
+      # other
+      rsync
+      xev
+      btop
+      smartmontools
+      flameshot
+      peazip
+      proton-vpn
+      proton-authenticator
+      ungoogled-chromium
     ];
 
     file = {
