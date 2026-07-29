@@ -32,16 +32,18 @@
 		};
 	};
 
-
 	nixpkgs.config.allowUnfree = true;
 	environment.systemPackages = with pkgs; [
-		gcc
+		brightnessctl
 		clang
 		clang-tools
 		cmake
-		brightnessctl
+		gcc
+		lxsession
 		tree
 	];
+
+	security.polkit.enable = true;
 
 	services = {
 		displayManager.ly.enable = true;
