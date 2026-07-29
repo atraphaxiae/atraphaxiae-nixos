@@ -8,3 +8,6 @@
 !/flake.lock
 
 !/atraphaxiae.nix
+
+!/dotfiles/
+!/dotfiles/.bashrc

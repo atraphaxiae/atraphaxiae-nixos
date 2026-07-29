@@ -5,6 +5,7 @@
     stateVersion = "26.05";
     username = "atraphaxiae";
     homeDirectory = "/home/atraphaxiae";
+   
     packages = with pkgs; [
       # fonts
       iosevka
@@ -12,6 +13,10 @@
       noto-fonts-cjk-sans
       noto-fonts-color-emoji
     ];
+
+    file = {
+      ".bashrc".source = ./dotfiles/.bashrc;
+    };
   };
 
   fonts.fontconfig.enable = true;
