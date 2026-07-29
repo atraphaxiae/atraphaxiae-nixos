@@ -1,10 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
-	imports =
-		[
-			./hardware-configuration.nix
-		];
+	system.stateVersion = "26.05";
+
+	imports = [ ./hardware-configuration.nix ];
 
 	boot.loader = {
 		systemd-boot.enable = true;
@@ -55,12 +54,8 @@
 	};
 
 	programs = {
-		gnupg.agent = {
-			enable = true;
-		};
+		gnupg.agent.enable = true;
 		tmux.enable = true;
 		vim.enable = true;
 	};
-
-	system.stateVersion = "26.05";
 }
