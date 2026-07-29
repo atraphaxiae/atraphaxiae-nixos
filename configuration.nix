@@ -52,7 +52,7 @@
 	};
 
 	services = {
-		logind.settings.login = {
+		logind.settings.Login = {
 			HandleLidSwitch = "ignore";
 		};
 		libinput.touchpad = {
