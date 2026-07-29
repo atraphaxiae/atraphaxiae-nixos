@@ -80,6 +80,7 @@
 	};
 
 	imports = [
+		./atraphaxiae/easyeffects.nix
 		./atraphaxiae/firefox.nix
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
