@@ -52,6 +52,10 @@
 	};
 
 	services = {
+		logind.settings.login = {
+			HandleLidSwitch = "ignore";
+		};
+
 		displayManager.ly.enable = true;
 
 		openssh.enable = true;
