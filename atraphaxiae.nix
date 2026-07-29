@@ -16,6 +16,7 @@
 
     file = {
       ".bashrc".source = ./dotfiles/.bashrc;
+      ".xinitrc".source = ./dotfiles/.xinitrc;
     };
   };
 
