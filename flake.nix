@@ -21,6 +21,10 @@
             useGlobalPkgs = true;
             useUserPackages = true; 
             users.atraphaxiae.imports = [ ./atraphaxiae.nix ];
+            extraSpecialArgs = { 
+              terminal = "kitty";
+              modifier = "Mod4";
+            };
           };
         }
       ];
