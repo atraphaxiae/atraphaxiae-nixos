@@ -173,14 +173,17 @@
 				"editor.renderWhitespace" = "all";
 				"editor.rulers" = [ 100 ];
 				"workbench.colorTheme" = "Winter is Coming (Dark Blue)";
-				"workbench.treeIndent" = 20;
+				"workbench.tree.indent" = 20;
 				"files.insertFinalNewline" = true;
 				"files.trimFinalNewlines" = true;
 				"files.trimTrailingWhitespace" = true;
 				"C_Cpp.intelliSenseEngine" = "disabled";
+
 				"[typst]"."editor.tabSize" = 4;
-				"[nix]"."editor.tabSize" = 4;
-				"[nix]"."editor.insertSpaces" = false;
+				"[nix]" = {
+					"editor.tabSize" = 4;
+					"editor.insertSpaces" = false;
+				};
 			};
 		};
 	};
