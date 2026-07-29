@@ -22,7 +22,7 @@
 	fileSystems."/archive" = {
 		device = "/dev/disk/by-label/archive";
 		fsType = "ext4";
-		optiona = [ "nofail" ];
+		options = [ "nofail" ];
 	};
 
 	swapDevices = [ ];
