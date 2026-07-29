@@ -1,4 +1,4 @@
-{ config, pkgs, terminal, modifier, ... }:
+{ config, pkgs, terminal, ... }:
 
 {
 	home = {
