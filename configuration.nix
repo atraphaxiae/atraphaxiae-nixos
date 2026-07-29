@@ -38,6 +38,8 @@
   ];
 
   services = {
+    displayManager.ly.enable = true;
+
     openssh.enable = true;
 
     pipewire = {
@@ -47,6 +49,7 @@
 
     xserver = {
       enable = true;
+      displayManager.startx.enable = true;
       xkb.layout = "us";
     };
   };
