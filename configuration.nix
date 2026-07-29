@@ -60,6 +60,7 @@
 			disableWhileTyping = true;
 		};
 		displayManager.ly.enable = true;
+		gvfs.enable = true;
 		openssh.enable = true;
 		pipewire = {
 			enable = true;
@@ -73,7 +74,11 @@
 	};
 
 	programs = {
+		nm-applet.enable = true;
+		dconf.enable = true;
 		gnupg.agent.enable = true;
+		steam.enable = true;
+		thunar.enable = true;
 		tmux.enable = true;
 		vim.enable = true;
 	};
