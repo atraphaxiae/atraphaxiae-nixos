@@ -66,16 +66,31 @@
 
 	fonts.fontconfig.enable = true;
 
-	programs.rofi = {
-		inherit terminal;
+	xdg.userDirs = {
 		enable = true;
+		createDirectories = true;
 	};
 
-	programs.kitty = {
-		enable = true;
-		font = {
-			name = "Iosevka Extended";
-			size = 10;
+	programs = {
+		feh.enable = true;
+		gh.enable = true;
+		kitty = {
+			enable = true;
+			font.name = "Iosevka Extended";
+			font.size = 10;
+		};
+		rmpc.enable = true;
+		rofi = {
+			enable = true;
+			inherit terminal;
+		};
+		vesktop = {
+			enable = true;
+			settings = {
+				arRPC = true;
+				minimizeToTray = true;
+				discordBranch = "stable";
+			};
 		};
 	};
 
