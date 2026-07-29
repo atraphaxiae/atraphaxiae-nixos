@@ -84,6 +84,7 @@
 		./atraphaxiae/firefox.nix
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
+		./atraphaxiae/mpd.nix
 		./atraphaxiae/vscode.nix
 	];
 }
