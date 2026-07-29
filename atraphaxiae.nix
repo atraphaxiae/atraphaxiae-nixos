@@ -5,7 +5,6 @@
 		stateVersion = "26.05";
 		username = "atraphaxiae";
 		homeDirectory = "/home/atraphaxiae";
-
 		packages = with pkgs; [
 			# fonts
 			iosevka
@@ -57,7 +56,6 @@
 			proton-authenticator
 			ungoogled-chromium
 		];
-
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
 			".xinitrc".source = ./dotfiles/.xinitrc;
