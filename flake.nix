@@ -8,7 +8,7 @@
   };
   outputs = inputs@{ self, nixpkgs, ... }: {
     # NOTE: 'nixos' is the default hostname
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.atraphaxiae-nixos = nixpkgs.lib.nixosSystem {
       modules = [ ./configuration.nix ];
     };
   };
