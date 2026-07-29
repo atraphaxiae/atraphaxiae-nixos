@@ -15,7 +15,7 @@
 
       # downloads
       qbittorrent
-      nixotine-plus
+      nicotine-plus
 
       # audio
       ffmpeg_7-full
