@@ -6,3 +6,5 @@
 !/hardware-configuration.nix
 !/flake.nix
 !/flake.lock
+
+!/atraphaxiae.nix

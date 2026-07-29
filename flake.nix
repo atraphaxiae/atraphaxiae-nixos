@@ -19,7 +19,8 @@
           home-manager = {
             backupFileExtension = "backup";
             useGlobalPkgs = true;
-            useUserPackages = true;   
+            useUserPackages = true; 
+            users.atraphaxiae.imports = [ ./atraphaxiae.nix ];
           };
         }
       ];
