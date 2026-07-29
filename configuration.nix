@@ -59,18 +59,6 @@
     vim.enable = true;
   };
 
-  programs.git = {
-    enable = true;
-    config = {
-      user.name = "Nile Jocson";
-      user.email = "atraphaxiae@gmail.com";
-      user.signingkey = "07CE2301AB14BC88";
-      init.defaultbranch = "main";
-      commit.gpgsign = true;
-      tag.gpgsign = true;
-    };
-  };
-
   system.stateVersion = "26.05";
 }
 
