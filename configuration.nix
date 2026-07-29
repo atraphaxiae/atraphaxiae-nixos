@@ -55,16 +55,16 @@
 		logind.settings.login = {
 			HandleLidSwitch = "ignore";
 		};
-
+		libinput.touchpad = {
+			tapping = false;
+			disableWhileTyping = true;
+		};
 		displayManager.ly.enable = true;
-
 		openssh.enable = true;
-
 		pipewire = {
 			enable = true;
 			pulse.enable = true;
 		};
-
 		xserver = {
 			enable = true;
 			displayManager.startx.enable = true;
