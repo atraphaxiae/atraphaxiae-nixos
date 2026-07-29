@@ -106,7 +106,7 @@
 
   programs.vscode = {
     enable = true;
-    mutableExtensionDir = false;
+    mutableExtensionsDir = false;
     profiles.default = {
       extensions = with pkgs.vscode-extensions; [
         johnpapa.winteriscoming
