@@ -59,6 +59,7 @@
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
 			".xinitrc".source = ./dotfiles/.xinitrc;
+			"Music".source = config.lib.file.mkOutOfStoreSymlink "/archive/Music";
 		};
 	};
 
