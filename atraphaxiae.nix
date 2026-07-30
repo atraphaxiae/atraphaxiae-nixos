@@ -122,6 +122,7 @@
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
 		./atraphaxiae/mpd.nix
+		./atraphaxiae/spicetify.nix
 		./atraphaxiae/vscode.nix
 	];
 }

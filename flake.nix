@@ -9,31 +9,35 @@
 			url = "github:nix-community/NUR";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 	};
 
 	outputs = inputs@{
 		nixpkgs,
 		home-manager,
+		spicetify-nix,
 		nur,
 		...
 	}: {
 		nixosConfigurations.atraphaxiae-nixos = nixpkgs.lib.nixosSystem {
 			modules = [
 				./configuration.nix
-
 				home-manager.nixosModules.home-manager {
 					home-manager = {
 						backupFileExtension = "backup";
 						useGlobalPkgs = true;
 						useUserPackages = true;
-						users.atraphaxiae.imports = [ ./atraphaxiae.nix ];
+						users.atraphaxiae.imports = [
+							spicetify-nix.homeManagerModules.spicetify
+							./atraphaxiae.nix
+						];
 						extraSpecialArgs = {
+							inherit inputs;
 							terminal = "kitty";
 							modifier = "Mod4";
 						};
 					};
 				}
-
 				nur.modules.nixos.default
 			];
 		};
