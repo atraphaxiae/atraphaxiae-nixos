@@ -20,4 +20,6 @@
 
 !/dotfiles/
 !/dotfiles/.bashrc
+!/dotfiles/.fehbg
 !/dotfiles/.xinitrc
+!/dotfiles/bg.png

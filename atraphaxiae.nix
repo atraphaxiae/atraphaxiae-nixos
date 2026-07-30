@@ -59,7 +59,9 @@
 		];
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
+			".fehbg".source = ./dotfiles/.fehbg;
 			".xinitrc".source = ./dotfiles/.xinitrc;
+			"bg.png".source = ./dotfiles/bg.png;
 			"Music".source = config.lib.file.mkOutOfStoreSymlink "/archive/Music";
 		};
 	};

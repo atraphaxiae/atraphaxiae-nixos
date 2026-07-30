@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+/etc/profiles/per-user/atraphaxiae/bin/feh --no-fehbg --bg-scale '/home/atraphaxiae/bg.png'
