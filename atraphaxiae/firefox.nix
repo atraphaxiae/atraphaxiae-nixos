@@ -7,25 +7,26 @@
 			isDefault = true;
 			settings = {
 				"browser.shell.checkDefaultBrowser" = false;
-				"signon.rememberSignons" = false;
-				"extensions.InstallTrigger.enabled" = false;
 				"extensions.autoDisableScopes" = 0;
+				"extensions.InstallTrigger.enabled" = false;
+				"extensions.unifiedExtensions.button.always_visible" = false;
+				"signon.rememberSignons" = false;
 			};
 			extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
-				ublock-origin
 				return-youtube-dislikes
+				ublock-origin
 			];
 		};
 		policies = {
 			ExtensionSettings = {
+				"{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
+					default_area = "navbar";
+					installation_mode = "force_installed";
+				};
 				"uBlock0@raymondhill.net" = {
 					default_area = "navbar";
 					installation_mode = "force_installed";
 					private_browsing = true;
-				};
-				"{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
-					default_area = "navbar";
-					installation_mode = "force_installed";
 				};
 			};
 		};
