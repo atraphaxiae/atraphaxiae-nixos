@@ -19,9 +19,13 @@
 		policies = {
 			ExtensionSettings = {
 				"uBlock0@raymondhill.net" = {
-					default_area = "menupanel";
+					default_area = "navbar";
 					installation_mode = "force_installed";
 					private_browsing = true;
+				};
+				"{762f9885-5a13-4abd-9c77-433dcd38b8fd}" = {
+					default_area = "navbar";
+					installation_mode = "force_installed";
 				};
 			};
 		};
