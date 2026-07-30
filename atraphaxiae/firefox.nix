@@ -10,6 +10,7 @@
 				"extensions.autoDisableScopes" = 0;
 				"extensions.InstallTrigger.enabled" = false;
 				"extensions.unifiedExtensions.button.always_visible" = false;
+				"identity.fxaccounts.toolbar.enabled" = false;
 				"signon.rememberSignons" = false;
 			};
 			extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
