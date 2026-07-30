@@ -16,5 +16,14 @@
 				return-youtube-dislikes
 			];
 		};
+		policies = {
+			ExtensionSettings = {
+				"uBlock0@raymondhill.net" = {
+					default_area = "menupanel";
+					installation_mode = "force_installed";
+					private_browsing = true;
+				};
+			};
+		};
 	};
 }
