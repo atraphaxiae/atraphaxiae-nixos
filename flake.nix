@@ -10,13 +10,18 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+		aagl = {
+			url = "github:ezKEa/aagl-gtk-on-nix/release-26.05";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
 	outputs = inputs@{
 		nixpkgs,
 		home-manager,
-		spicetify-nix,
 		nur,
+		spicetify-nix,
+		aagl,
 		...
 	}: {
 		nixosConfigurations.atraphaxiae-nixos = nixpkgs.lib.nixosSystem {
@@ -39,6 +44,11 @@
 					};
 				}
 				nur.modules.nixos.default
+				{
+					imports = [ aagl.nixosModules.default ];
+					nix.settings = aagl.nixConfig;
+					programs.anime-game-launcher.enable = true;
+				}
 			];
 		};
 	};
