@@ -56,6 +56,7 @@
 			smartmontools
 			ungoogled-chromium
 			xev
+			qdirstat
 		];
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
