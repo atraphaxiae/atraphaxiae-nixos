@@ -95,6 +95,7 @@
 	};
 
 	programs = {
+		fastfetch.enable = true;
 		feh.enable = true;
 		gh.enable = true;
 		kitty = {
