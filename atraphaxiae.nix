@@ -39,6 +39,7 @@
 			# media
 			krita
 			inkscape
+			shotcut
 			vlc
 
 			# passwords
