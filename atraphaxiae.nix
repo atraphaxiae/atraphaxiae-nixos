@@ -58,6 +58,7 @@
 			ungoogled-chromium
 			xev
 			qdirstat
+			zoom-us
 		];
 		file = {
 			".bashrc".source = ./dotfiles/.bashrc;
