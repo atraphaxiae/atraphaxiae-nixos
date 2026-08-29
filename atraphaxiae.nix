@@ -1,4 +1,4 @@
-{ config, pkgs, terminal, ... }:
+{ config, osConfig, pkgs, terminal, ... }:
 
 {
 	home = {
@@ -104,6 +104,10 @@
 			enable = true;
 			font.name = "Iosevka Extended";
 			font.size = 10;
+		};
+		lutris = {
+			enable = true;
+			steamPackage = osConfig.programs.steam.package;
 		};
 		rmpc.enable = true;
 		rofi = {
