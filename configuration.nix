@@ -77,7 +77,10 @@
 		nm-applet.enable = true;
 		dconf.enable = true;
 		gnupg.agent.enable = true;
-		steam.enable = true;
+		steam = {
+			enable = true;
+			extraCompatPackages = [ pkgs.proton-ge-bin ];
+		};
 		thunar.enable = true;
 		tmux.enable = true;
 		vim.enable = true;
