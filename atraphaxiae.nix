@@ -51,6 +51,7 @@
 			flameshot
 			ltspice
 			peazip
+			pince
 			proton-vpn
 			proton-authenticator
 			rsync
