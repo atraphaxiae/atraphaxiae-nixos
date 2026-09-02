@@ -17,6 +17,8 @@
 		networkmanager.enable = true;
 	};
 
+	hardware.graphics.enable32Bit = true;
+
 	time.timeZone = "Asia/Manila";
 
 	i18n.defaultLocale = "en_US.UTF-8";

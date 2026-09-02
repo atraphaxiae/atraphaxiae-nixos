@@ -46,6 +46,10 @@
 			gopass
 			gopass-hibp
 
+			# wine
+			wineWow64Packages.stable
+			winetricks
+
 			# other
 			btop
 			flameshot
