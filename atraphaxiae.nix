@@ -47,7 +47,7 @@
 			gopass-hibp
 
 			# wine
-			wineWow64Packages.stable
+			wineWow64Packages.staging
 			winetricks
 
 			# other
