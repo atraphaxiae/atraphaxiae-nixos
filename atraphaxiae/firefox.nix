@@ -3,7 +3,9 @@
 {
 	programs.firefox = {
 		enable = true;
-		profiles.atraphaxiae = {
+		package = pkgs.firefox-devedition;
+		profiles.dev-edition-default = {
+			id = 0;
 			isDefault = true;
 			settings = {
 				"browser.shell.checkDefaultBrowser" = false;
