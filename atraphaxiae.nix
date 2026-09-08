@@ -132,6 +132,7 @@
 	imports = [
 		./atraphaxiae/easyeffects.nix
 		./atraphaxiae/firefox.nix
+		./atraphaxiae/flatpak.nix
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
 		./atraphaxiae/mpd.nix

@@ -5,6 +5,7 @@
 			url = "github:nix-community/home-manager/release-26.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.7.0";
 		nur = {
 			url = "github:nix-community/NUR";
 			inputs.nixpkgs.follows = "nixpkgs";
@@ -19,6 +20,7 @@
 	outputs = inputs@{
 		nixpkgs,
 		home-manager,
+		nix-flatpak,
 		nur,
 		spicetify-nix,
 		aagl,
@@ -33,6 +35,7 @@
 						useGlobalPkgs = true;
 						useUserPackages = true;
 						users.atraphaxiae.imports = [
+							nix-flatpak.homeManagerModules.nix-flatpak
 							spicetify-nix.homeManagerModules.spicetify
 							./atraphaxiae.nix
 						];

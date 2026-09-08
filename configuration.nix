@@ -62,6 +62,7 @@
 			disableWhileTyping = true;
 		};
 		displayManager.ly.enable = true;
+		flatpak.enable = true;
 		gvfs.enable = true;
 		openssh.enable = true;
 		pipewire = {
