@@ -114,6 +114,14 @@
 			enable = true;
 			steamPackage = osConfig.programs.steam.package;
 		};
+		nh = {
+			enable = true;
+			clean = {
+				enable = true;
+				extraArgs = "--keep-since 7d --keep 10";
+			};
+			flake = "/home/atraphaxiae/Projects/repo/atraphaxiae/atraphaxiae-nixos";
+		};
 		rmpc.enable = true;
 		rofi = {
 			enable = true;
