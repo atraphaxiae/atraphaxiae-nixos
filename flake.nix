@@ -10,6 +10,10 @@
 			url = "github:nix-community/NUR";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		sops-nix = {
+			url = "github:Mic92/sops-nix";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 		spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 		aagl = {
 			url = "github:ezKEa/aagl-gtk-on-nix/release-26.05";
@@ -22,6 +26,7 @@
 		home-manager,
 		nix-flatpak,
 		nur,
+		sops-nix,
 		spicetify-nix,
 		aagl,
 		...
@@ -36,6 +41,7 @@
 						useUserPackages = true;
 						users.atraphaxiae.imports = [
 							nix-flatpak.homeManagerModules.nix-flatpak
+							sops-nix.homeManagerModules.sops
 							spicetify-nix.homeManagerModules.spicetify
 							./atraphaxiae.nix
 						];

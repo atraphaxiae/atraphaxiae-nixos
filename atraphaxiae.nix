@@ -45,6 +45,7 @@
 			# passwords
 			gopass
 			gopass-hibp
+			sops
 
 			# wine
 			wineWow64Packages.staging
@@ -144,7 +145,9 @@
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
 		./atraphaxiae/mpd.nix
+		./atraphaxiae/retroarch.nix
 		./atraphaxiae/spicetify.nix
+		./atraphaxiae/sops.nix
 		./atraphaxiae/vscode.nix
 	];
 }

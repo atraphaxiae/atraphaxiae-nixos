@@ -1,3 +1,5 @@
+{ ... }:
+
 {
 	services.flatpak = {
 		update.onActivation = true;

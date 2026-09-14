@@ -1,0 +1,6 @@
+keys:
+  - &atraphaxiae 7BACE873B7A0841BEEDA1E81EB05E0723C7671DB
+
+creation_rules:
+  - path_regex: secrets\.yaml$
+    pgp: *atraphaxiae

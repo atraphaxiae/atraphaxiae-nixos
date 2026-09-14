@@ -4,6 +4,9 @@
 !/LICENSE
 !/README.md
 
+!/.sops.yaml
+!/secrets.yaml
+
 !/configuration.nix
 !/hardware-configuration.nix
 !/flake.nix
@@ -17,7 +20,9 @@
 !/atraphaxiae/git.nix
 !/atraphaxiae/i3.nix
 !/atraphaxiae/mpd.nix
+!/atraphaxiae/retroarch.nix
 !/atraphaxiae/spicetify.nix
+!/atraphaxiae/sops.nix
 !/atraphaxiae/vscode.nix
 
 !/dotfiles/
@@ -25,3 +30,5 @@
 !/dotfiles/.fehbg
 !/dotfiles/.xinitrc
 !/dotfiles/bg.png
+!/dotfiles/retroarch/
+!/dotfiles/retroarch/retroarch.cfg
