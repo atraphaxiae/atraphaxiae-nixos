@@ -36,6 +36,9 @@
 			rustup
 			zola
 
+			# gaming
+			retroarch-full
+
 			# media
 			krita
 			inkscape
@@ -145,7 +148,6 @@
 		./atraphaxiae/git.nix
 		./atraphaxiae/i3.nix
 		./atraphaxiae/mpd.nix
-		./atraphaxiae/retroarch.nix
 		./atraphaxiae/spicetify.nix
 		./atraphaxiae/sops.nix
 		./atraphaxiae/vscode.nix
