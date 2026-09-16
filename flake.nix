@@ -33,6 +33,20 @@
 	}: {
 		nixosConfigurations.atraphaxiae-nixos = nixpkgs.lib.nixosSystem {
 			modules = [
+				{
+					nixpkgs.overlays = [
+						(final: prev: {
+							linux-firmware = prev.linux-firmware.overrideAttrs (old: {
+								version = "20260810";
+								src = prev.fetchurl {
+									url = "https://gitlab.com/kernel-firmware/linux-firmware/-/archive/20260810/linux-firmware-20260810.tar.gz";
+									hash = "sha256-t43QR131qrr+HlFdyYixfejF9a/OFlc0UydfX4VaLLI=";
+								};
+							});
+						})
+					];
+				}
+
 				./configuration.nix
 				home-manager.nixosModules.home-manager {
 					home-manager = {
