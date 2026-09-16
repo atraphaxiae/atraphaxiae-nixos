@@ -38,6 +38,7 @@
 
 			# gaming
 			retroarch-full
+			xclicker
 
 			# media
 			krita
