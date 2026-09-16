@@ -23,6 +23,7 @@
 				"editor.fontFamily" = "Iosevka Extended";
 				"editor.inlayHints.enabled" = "offUnlessPressed";
 				"editor.insertSpaces" = false;
+				"editor.minimap.enabled" = false;
 				"editor.renderWhitespace" = "all";
 				"editor.rulers" = [ 100 ];
 				"workbench.colorTheme" = "Winter is Coming (Dark Blue)";
