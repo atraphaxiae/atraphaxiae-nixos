@@ -46,6 +46,11 @@
 			shotcut
 			vlc
 
+			# archives
+			kdePackages.ark
+			p7zip
+			rar
+
 			# passwords
 			gopass
 			gopass-hibp
@@ -59,7 +64,6 @@
 			btop
 			flameshot
 			ltspice
-			peazip
 			pince
 			proton-vpn
 			proton-authenticator
