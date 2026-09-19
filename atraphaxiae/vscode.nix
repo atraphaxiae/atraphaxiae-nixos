@@ -8,6 +8,7 @@
 			extensions = with pkgs.vscode-extensions; [
 				johnpapa.winteriscoming
 				eamodio.gitlens
+				vadimcn.vscode-lldb
 				ms-vscode.cpptools
 				llvm-vs-code-extensions.vscode-clangd
 				ms-vscode.cmake-tools
