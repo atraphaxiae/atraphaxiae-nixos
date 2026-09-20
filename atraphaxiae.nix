@@ -42,8 +42,9 @@
 			xclicker
 
 			# media
-			krita
+			blender
 			inkscape
+			krita
 			shotcut
 			vlc
 
