@@ -62,6 +62,7 @@
 			winetricks
 
 			# other
+			broot
 			btop
 			flameshot
 			ltspice
