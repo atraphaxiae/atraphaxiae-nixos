@@ -15,7 +15,10 @@
 	networking = {
 		hostName = "atraphaxiae-nixos";
 		nameservers = [ "1.1.1.1" "1.0.0.1" ];
-		networkmanager.enable = true;
+		networkmanager = {
+			enable = true;
+			dns = "none";
+		};
 	};
 
 	hardware.graphics.enable32Bit = true;
