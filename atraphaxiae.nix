@@ -63,6 +63,7 @@
 			winetricks
 
 			# other
+			bind
 			broot
 			btop
 			flameshot
