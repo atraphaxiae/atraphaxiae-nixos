@@ -94,8 +94,12 @@
 	};
 
 	nix.settings = {
-		substituters = [ "https://unmojang.cachix.org" ];
+		substituters = [
+			"https://ezkea.cachix.org"
+			"https://unmojang.cachix.org"
+		];
 		trusted-public-keys = [
+			"ezkea.cachix.org-1:ioBmUbJTZIKsHmWWXPe1FSFbeVe+afhfgqgTSNd34eI="
 			"unmojang.cachix.org-1:OfHnbBNduZ6Smx9oNbLFbYyvOWSoxb2uPcnXPj4EDQY="
 		];
 	};
