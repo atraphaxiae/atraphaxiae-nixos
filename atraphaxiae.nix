@@ -73,7 +73,6 @@
 			proton-authenticator
 			rsync
 			smartmontools
-			ungoogled-chromium
 			xev
 			qdirstat
 			zoom-us
