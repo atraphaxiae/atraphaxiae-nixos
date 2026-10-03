@@ -135,7 +135,6 @@
 			};
 			flake = "/home/atraphaxiae/Projects/repo/atraphaxiae/atraphaxiae-nixos";
 		};
-		prismlauncher.enable = true;
 		rmpc.enable = true;
 		rofi = {
 			enable = true;

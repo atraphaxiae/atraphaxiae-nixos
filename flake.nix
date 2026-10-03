@@ -19,6 +19,7 @@
 			url = "github:ezKEa/aagl-gtk-on-nix/release-26.05";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+		fjordlauncher.url = "github:hero-persson/FjordLauncherUnlocked";
 	};
 
 	outputs = inputs@{
@@ -29,6 +30,7 @@
 		sops-nix,
 		spicetify-nix,
 		aagl,
+		fjordlauncher,
 		...
 	}: {
 		nixosConfigurations.atraphaxiae-nixos = nixpkgs.lib.nixosSystem {
@@ -72,6 +74,12 @@
 					nix.settings = aagl.nixConfig;
 					programs.anime-game-launcher.enable = true;
 				}
+				(
+					{ pkgs, ... }:
+					{
+						environment.systemPackages = [ fjordlauncher.packages.${pkgs.system}.fjordlauncher ];
+					}
+				)
 			];
 		};
 	};
