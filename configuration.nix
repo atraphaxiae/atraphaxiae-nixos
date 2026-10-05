@@ -86,7 +86,7 @@
 		gnupg.agent.enable = true;
 		steam = {
 			enable = true;
-			extraCompatPackages = [ pkgs.proton-ge-bin ];
+			extraCompatPackages = [ pkgs.proton-ge-bin pkgs.dwproton-bin ];
 		};
 		thunar.enable = true;
 		tmux.enable = true;
