@@ -21,7 +21,10 @@
 		};
 	};
 
-	hardware.graphics.enable32Bit = true;
+	hardware = {
+		bluetooth.enable = true;
+		graphics.enable32Bit = true;
+	};
 
 	time.timeZone = "Asia/Manila";
 
