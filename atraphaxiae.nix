@@ -25,6 +25,7 @@
 			ardour
 			lsp-plugins
 			qpwgraph
+			audacity
 			musescore
 			dr14_tmeter
 
