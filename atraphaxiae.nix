@@ -38,7 +38,10 @@
 			zola
 
 			# gaming
-			retroarch-full
+			(retroarch.withCores (cores: with cores; [
+				mgba
+				ppsspp
+			]))
 			vinegar
 			xclicker
 
