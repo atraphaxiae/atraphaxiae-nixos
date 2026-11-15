@@ -68,7 +68,7 @@
 			broot
 			btop
 			flameshot
-			ltspice
+			# ltspice
 			pince
 			proton-vpn
 			proton-authenticator
